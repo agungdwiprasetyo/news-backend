@@ -4,6 +4,21 @@ Using Golang and MongoDB
 
 Deploy to http://news-api.agungdwiprasetyo.com.
 
+### Install dependencies
+```sh
+$ sh getdependencies.sh
+```
+
+### Build application
+```sh
+$ go build main.go
+```
+
+### Run application
+```sh
+./main
+```
+
 ### List API
 * GET    /news/list                     **-->** ./application/module/News.getListNews
 * GET    /news/find/:id                 **-->** ./application/module/News.getNewsByID
