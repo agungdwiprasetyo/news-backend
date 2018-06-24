@@ -25,7 +25,7 @@ type (
 
 func (this *News) FindDispart(page, limit int) (count int, news []News) {
 	db := database.LoadDB()
-	query := db.C("news").Find(bson.M{}).Sort("-posted_at")
+	query := db.C("news").Find(bson.M{"status": bson.M{"$ne": "dihapus"}}).Sort("-posted_at")
 	count, _ = query.Count()
 	if err := query.Skip(page).Limit(limit).All(&news); err != nil {
 		debug.PrintRed("Error in FindDispart News", err)
