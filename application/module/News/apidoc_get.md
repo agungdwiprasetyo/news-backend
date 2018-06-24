@@ -6,7 +6,7 @@ Untuk mendapatkan semua data berita dengan parameter partisi halaman untuk limit
 **Handler Function: ./application/module/News.getAllNews** 
 
 * Method : GET
-* URL : http://kumparan-api.agungdwiprasetyo.com/news/list?page=1&limit=10
+* URL : http://news-api.agungdwiprasetyo.com/news/list?page=1&limit=10
 * Response body example:
 ```json
 {
@@ -80,7 +80,7 @@ Untuk melihat/membaca isi berita.
 **Handler Function: ./application/module/News.getNewsByID** 
 
 * Method : GET
-* URL : http://kumparan-api.agungdwiprasetyo.com/news/find/{{news_object_id}}
+* URL : http://news-api.agungdwiprasetyo.com/news/find/{{news_object_id}}
 * Response body example:
 ```json
 {
@@ -124,7 +124,7 @@ Untuk memfilter berita apa saja yang termasuk dalam topik tertentu (Aktifkan fil
 **Handler Function: ./application/module/News.filterNewsByTopic**
 
 * Method : GET
-* URL : http://kumparan-api.agungdwiprasetyo.com/news/filter/topic/{{topic_string_id}}
+* URL : http://news-api.agungdwiprasetyo.com/news/filter/topic/{{topic_string_id}}
 * Response body example (misal get data dengan parameter topic_string_id="jakarta"):
 ```json
 {
@@ -192,7 +192,7 @@ Untuk mengaktifkan fitur filter berita berdasarkan parameter status ("konsep", "
 **Handler Function: ./application/module/News.filterNewsByStatus** 
 
 * Method : GET
-* URL : http://kumparan-api.agungdwiprasetyo.com/news/filter/status/{{status_enum}}
+* URL : http://news-api.agungdwiprasetyo.com/news/filter/status/{{status_enum}}
 * Response body example (misal get data dengan parameter status="konsep"):
 ```json
 {

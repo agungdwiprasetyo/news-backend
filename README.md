@@ -5,7 +5,7 @@ Using Golang and MongoDB
 Deploy to http://news-api.agungdwiprasetyo.com.
 
 ### List API
-* GET    /news/list                     **-->** ./application/module/News.getAllNews
+* GET    /news/list                     **-->** ./application/module/News.getListNews
 * GET    /news/find/:id                 **-->** ./application/module/News.getNewsByID
 * GET    /news/filter/topic/:id         **-->** ./application/module/News.filterNewsByTopic
 * GET    /news/filter/status/:status    **-->** ./application/module/News.filterNewsByStatus
@@ -22,7 +22,7 @@ Deploy to http://news-api.agungdwiprasetyo.com.
 * DELETE /topic/remove/:id              **-->** ./application/module/Topic.removeTopic
 
 ### Data Structure
-#### NEWS
+#### News
 ```go
 News struct {
 	ID           bson.ObjectId `bson:"_id" json:"id,omitempty"`
@@ -36,7 +36,7 @@ News struct {
 }
 ```
 
-#### TOPIC
+#### Topic
 ```go
 Topic struct {
 	ID       bson.ObjectId `bson:"_id" json:"id,omitempty"`

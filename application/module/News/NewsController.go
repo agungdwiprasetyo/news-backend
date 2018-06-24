@@ -13,9 +13,9 @@ import (
 )
 
 // METHOD: GET /news/list?page=&limit=
-func getAllNews(c *gin.Context) {
+func getListNews(c *gin.Context) {
 	page, limit := parsing.PaginationParam(c)
-	count, news := new(model.News).FindAll(page, limit)
+	count, news := new(model.News).FindDispart(page, limit)
 	for i, tmp := range news {
 		var topicID []bson.ObjectId
 		for _, topic := range tmp.Topics {

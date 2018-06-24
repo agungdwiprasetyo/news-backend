@@ -6,7 +6,7 @@ import (
 
 // Router -> [host]/news/[route]
 func Router(router *gin.RouterGroup) {
-	router.GET("/list", getAllNews)
+	router.GET("/list", getListNews)
 	router.GET("/find/:id", getNewsByID)
 	router.GET("/filter/topic/:id", filterNewsByTopic)
 	router.GET("/filter/status/:status", filterNewsByStatus)

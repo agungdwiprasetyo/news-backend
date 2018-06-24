@@ -29,8 +29,8 @@ Contoh model object data dari suatu berita:
 **Handler Function: ./application/module/News.deleteTopic** 
 
 * Method : DELETE
-* URL : http://kumparan-api.agungdwiprasetyo.com/news/topic?news_id={{news_object_id}}&topic_id={{topic_object_id}}
-Misal jika ingin menghapus topik "Pilkada" dari contoh model data diatas maka url-nya yaitu: URL : http://kumparan-api.agungdwiprasetyo.com/news/topic?news_id=5b2f78b6a150187e295875fe&topic_id=5b2f78b6a150187e29587600
+* URL : http://news-api.agungdwiprasetyo.com/news/topic?news_id={{news_object_id}}&topic_id={{topic_object_id}}
+Misal jika ingin menghapus topik "Pilkada" dari contoh model data diatas maka url-nya yaitu: URL : http://news-api.agungdwiprasetyo.com/news/topic?news_id=5b2f78b6a150187e295875fe&topic_id=5b2f78b6a150187e29587600
 
 * Response body example (if success, http status code=200):
 ```json
@@ -42,10 +42,13 @@ Misal jika ingin menghapus topik "Pilkada" dari contoh model data diatas maka ur
 ```
 
 ### 2. Arsipkan data berita (soft delete)
+
 Untuk mengarsipkan data berita (soft delete).
 
+**Handler Function: ./application/module/News.archiveNews** 
+
 * Method : DELETE
-* URL : http://kumparan-api.agungdwiprasetyo.com/news/archive/{{news_object_id}}
+* URL : http://news-api.agungdwiprasetyo.com/news/archive/{{news_object_id}}
 
 * Response body example (if success, http status code=200):
 ```json
@@ -57,10 +60,13 @@ Untuk mengarsipkan data berita (soft delete).
 ```
 
 ### 3. Hapus data berita (hard delete)
+
 Untuk menghapus data berita dari database (hard delete). Data akan hilang selamanya.
 
+**Handler Function: ./application/module/News.removeNews**
+
 * Method : DELETE
-* URL : http://kumparan-api.agungdwiprasetyo.com/news/remove/{{news_object_id}}
+* URL : http://news-api.agungdwiprasetyo.com/news/remove/{{news_object_id}}
 
 * Response body example (if success, http status code=200):
 ```json
