@@ -46,8 +46,5 @@ func AppConfig(appPath string) error {
 	// // init cloud computing storage
 	// cloud.Init(appPath)
 
-	// init sessions
-	Sessions = sessions.NewCookieStore([]byte("@1msis"))
-
 	return nil
 }
