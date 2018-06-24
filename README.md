@@ -1,7 +1,8 @@
 # Backend-API for management News and Topic
 
 Using Golang and MongoDB
-Deploy to http://kumparan-api.agungdwiprasetyo.com.
+
+Deploy to http://news-api.agungdwiprasetyo.com.
 
 ### List API
 * GET    /news/list                     **-->** ./application/module/News.getAllNews
