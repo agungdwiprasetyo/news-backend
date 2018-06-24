@@ -38,6 +38,9 @@ $ go build main.go
 
 ### Data Structure
 #### News
+
+API documentation: ```./application/module/News/*.md```
+
 ```go
 News struct {
 	ID           bson.ObjectId `bson:"_id" json:"id,omitempty"`
@@ -51,7 +54,11 @@ News struct {
 }
 ```
 
+
 #### Topic
+
+API documentation: ```./application/module/Topic/*.md```
+
 ```go
 Topic struct {
 	ID       bson.ObjectId `bson:"_id" json:"id,omitempty"`
